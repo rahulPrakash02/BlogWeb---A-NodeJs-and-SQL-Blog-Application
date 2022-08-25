@@ -1,0 +1,21 @@
+<%- include('partials/formheader'); %>
+
+    <div class = "forms">
+        <h1>Change Password</h1><br>
+        <form action = "/fpassresult" method = "POST">
+            <p>Here, you can change your password.</p>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">New Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Answer" name = "pass">
+            </div><br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Answer" name = "cpass">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+    </div>
+
+<%- include('partials/formfooter'); %>

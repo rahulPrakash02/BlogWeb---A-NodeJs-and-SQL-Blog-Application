@@ -1,0 +1,48 @@
+body
+{
+    background-color: #F6F6F2;
+}
+
+.forms
+{
+    background-color: #388087;
+    margin: 5% 35%;
+    padding: 5%;
+    border-radius: 6%;
+    color: #C2EDCE;
+    text-align: center;
+}
+
+.formstwo
+{
+    background-color: #388087;
+    margin: 7% 13%;
+    padding: 5%;
+    color: #C2EDCE;
+    border: 2px solid #ffc107;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.forms a, .formstwo a
+{
+    color: #ffc107;
+}
+
+.forms select, .formstwo select
+{
+    padding: 8px 70px;
+    border-radius: 3px;
+}
+
+.left
+{
+    flex: 1;
+}
+
+.right
+{
+    flex: 1;
+    padding: 5%;
+}

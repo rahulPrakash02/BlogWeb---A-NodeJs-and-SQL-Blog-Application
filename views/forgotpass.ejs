@@ -1,0 +1,17 @@
+<%- include('partials/formheader'); %>
+
+    <div class = "forms">
+        <h1>BlogWeb Login</h1><br>
+        <form action = "/forgotpass" method = "POST">
+            <p><%= name %>, <%= securityQuestion %></p>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Answer</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Answer" name = "answer">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+    </div>
+
+<%- include('partials/formfooter'); %>

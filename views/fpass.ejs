@@ -1,0 +1,14 @@
+<%- include('partials/formheader'); %>
+
+    <div class = "forms">
+        <h1>BlogWeb Login</h1><br>
+        <form action = "/fpass" method = "POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" name = "username">
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+    </div>
+
+<%- include('partials/formfooter'); %>

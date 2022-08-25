@@ -1,0 +1,29 @@
+<%- include('partials/header'); %>
+
+<h1>Compose New Post</h1>
+<form action="/compose" method = "post">
+    <br>
+    <div class="form-group">
+      <label for="email"><b>Title:</b></label>
+      <input type="text" class="form-control" name = "title">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email"><b>Tags:</b></label>
+        <input type="text" class="form-control" name = "tag">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1"><b>Post Content: </b></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name = "textContent"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Feature Image: </label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" name = "image">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+<%- include('partials/footer'); %>

@@ -1,0 +1,38 @@
+<%- include('partials/formheader'); %>
+
+<div class="formstwo">
+    <div class="left">
+    <h1>BlogWeb Signup</h1><br>
+    <form action = "/signup" method="POST">
+        
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "username">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" name = "confirmpassword">
+            </div>
+        </div>
+        <div class="right">
+            <label for="exampleInputPassword1">Select your Security Question:</label>
+                <select name = "securityQuestion">
+                    <option value = "What is your Mother's Maiden Name?">What is your Mother's Maiden Name?</option>
+                    <option value = "What was your First Pet?">What was your First Pet?</option>
+                    <option value = "What secondary school did you Attend?">What secondary school did you Attend?</option>
+                    <option value = "What was the name of your birth town?">What was the name of your birth town?</option>
+                </select><br><br>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Your Answer</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Answer" name = "answer">
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%- include('partials/formfooter'); %>

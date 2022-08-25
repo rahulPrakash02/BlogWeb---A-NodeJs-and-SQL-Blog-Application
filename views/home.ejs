@@ -1,0 +1,31 @@
+<%- include('partials/header'); %>
+
+<p>Welcome, <b><%= userName %></b></p>
+<h1><%= pageTitle %></h1>
+<p><%= pageContent %></p>
+<br>
+<div class="container">
+    <div class="row row-cols-2">    
+        <% posts.forEach(function(post) {  %>
+            <div class="col">
+            <centre>
+                <br>
+                <hr>
+                <h2><%= post.title  %></h2>
+                <hr>
+                <a href = "tags/<%=post.tag%>"><button type = "menu" class = "btn btn-secondary btn-sm"><%= post.tag %></button></a>
+                <br><br>
+                <p><%= post.textcontent.substring(0,100) + ".....   " %><a href = "/posts/<%= post.title %>">Read More</a></p>
+                <br>
+                <img src = "../images/<%=post.image%>" width="75%" height="50%">
+                <br>
+                <br><br>
+            </centre>
+        </div>
+        <% }); %> 
+    </div>
+</div>
+
+
+<%- include('partials/footer'); %>
+

@@ -1,0 +1,12 @@
+<%- include('partials/header'); %>
+
+<h1><%= pageTitle %></h1>
+<form action="/edit/<%=pageTitle%>" method = "post">
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1"><b>Post Content: </b></label><br><br>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name = "textContent"></textarea>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <%- include('partials/footer'); %>

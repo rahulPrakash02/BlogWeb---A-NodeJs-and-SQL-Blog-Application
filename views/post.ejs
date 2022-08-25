@@ -1,0 +1,19 @@
+<%- include('partials/header'); %>
+<centre>
+    <hr>
+    <h2><%= post.title %></h1>
+    <hr>
+    <p>A post by <%= post.author %></p>
+    <button type = "menu" class = "btn btn-secondary btn-sm"><%= post.tag %></button>
+    <br><br>
+    <p><%= post.textcontent %></p>
+    <br>
+    <img src = "../images/<%=post.image%>" width="100%" height="100%">
+    <br><br>
+    <% console.log(userName) %>
+    <% if( post.author === userName ){ %>
+    <a href = "/edit/<%=post.title%>"><button class = "btn btn-success btn-lg">Edit Post</button></a>
+    <a href = "/delete/<%=post.title%>"><button class = "btn btn-danger btn-lg">Delete Post</button></a>
+    <% } %>
+</centre>
+<%- include('partials/footer'); %>

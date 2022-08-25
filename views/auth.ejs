@@ -1,0 +1,23 @@
+<%- include('partials/formheader'); %>
+
+    <div class = "forms">
+        <h1>BlogWeb Login</h1><br>
+        <form action = "/" method = "POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "username">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "password">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+        <br>
+        <p>Forgot Your Password? <a href = "/fpass">Go Here!</a></p>
+        <p>No Account yet? <a href = "/signup">Sign Up Now!</a></p>
+    </div>
+
+<%- include('partials/formfooter'); %>
